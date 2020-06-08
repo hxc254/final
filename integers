@@ -1,0 +1,23 @@
+package integers;
+
+import java.util.Scanner;
+
+class integers {
+
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		int i[]=new int[12];
+		for(int c=0;c<12;c+=1) {
+			System.out.print("enter phrases"+(c+1)+":");
+			i[c]=input.nextInt();
+	}
+		for(int c=0;c<12;c+=1) {
+			System.out.print(i[c]+" ");
+		}
+		System.out.println("");
+		for(int c=11;c>=0;c-=1) {
+			System.out.print(i[c]+" ");
+		}
+	}
+
+}
